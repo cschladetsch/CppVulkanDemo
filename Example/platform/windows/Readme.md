@@ -17,6 +17,5 @@ structures and utilities.
 Making a new engine based on Vulkan is a large and extremely complicated 
 undertaking.
 
-The symbols are in namespace `vtb` "Vulkan TwoBulls". This can be overridden by setting the 
-`VTB_NAMESPACE_NAME` pre-processor symbol.
+The symbols are in namespace `vtb`. This can be overridden by setting the `VTB_NAMESPACE_NAME` pre-processor symbol.
 
