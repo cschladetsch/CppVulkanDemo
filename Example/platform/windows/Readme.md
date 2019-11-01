@@ -19,4 +19,3 @@ undertaking.
 
 The symbols are in namespace `vtb`. This can be overridden by setting the 
 `VTB_NAMESPACE_NAME` pre-processor symbol.
-
