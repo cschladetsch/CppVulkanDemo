@@ -89,7 +89,7 @@
 		AAD6B6132086F4B600D7CCAE /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Debug.hpp; path = ../../../../../common/include/Debug.hpp; sourceTree = "<group>"; };
 		AAD6B6142086F4B700D7CCAE /* Image.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Image.hpp; path = ../../../../../common/include/Image.hpp; sourceTree = "<group>"; };
 		AAD6B6152086F4B700D7CCAE /* Template.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Template.hpp; path = ../../../../../common/include/Template.hpp; sourceTree = "<group>"; };
-		AAD6B6162086F4B700D7CCAE /* VulkanTwoBulls.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = VulkanTwoBulls.hpp; path = ../../../../../common/include/VulkanTwoBulls.hpp; sourceTree = "<group>"; };
+		AAD6B6162086F4B700D7CCAE /* VulkanLocal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = VulkanLocal.hpp; path = ../../../../../common/include/VulkanLocal.hpp; sourceTree = "<group>"; };
 		AAD6B6172086F4B700D7CCAE /* Instance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Instance.hpp; path = ../../../../../common/include/Instance.hpp; sourceTree = "<group>"; };
 		AAD6B6182086F4B700D7CCAE /* CreatePipeline.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CreatePipeline.hpp; path = ../../../../../common/include/CreatePipeline.hpp; sourceTree = "<group>"; };
 		AAD6B6192086F4B700D7CCAE /* SwapChain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SwapChain.hpp; path = ../../../../../common/include/SwapChain.hpp; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 				AAD6B63E2086F4BC00D7CCAE /* Util.hpp */,
 				AAD6B6262086F4B800D7CCAE /* Vertex.hpp */,
 				AAD6B62A2086F4B900D7CCAE /* Vulkan.hpp */,
-				AAD6B6162086F4B700D7CCAE /* VulkanTwoBulls.hpp */,
+				AAD6B6162086F4B700D7CCAE /* VulkanLocal.hpp */,
 			);
 			path = header;
 			sourceTree = "<group>";

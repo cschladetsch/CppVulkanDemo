@@ -34,7 +34,7 @@ void Instance::Create(bool enableValidationLayers)
 #endif
     VkApplicationInfo appInfo = {};
     appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
-    appInfo.pApplicationName = "TwoBullsVulkan";
+    appInfo.pApplicationName = "VulkanSpike";
     appInfo.applicationVersion = VK_MAKE_VERSION(0, 0, 1);
     appInfo.pEngineName = "No Engine";
     appInfo.engineVersion = VK_MAKE_VERSION(0, 0, 1);

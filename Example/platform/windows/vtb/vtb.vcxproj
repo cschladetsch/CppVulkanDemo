@@ -65,7 +65,7 @@
     <ClInclude Include="..\..\..\common\include\Vertex.hpp" />
     <ClInclude Include="..\..\..\common\include\Vulkan.hpp" />
     <ClInclude Include="..\..\..\common\include\Util.hpp" />
-    <ClInclude Include="..\..\..\common\include\VulkanTwoBulls.hpp" />
+    <ClInclude Include="..\..\..\common\include\VulkanLocal.hpp" />
     <ClInclude Include="..\..\common\include\Instance.hpp" />
   </ItemGroup>
   <ItemGroup>

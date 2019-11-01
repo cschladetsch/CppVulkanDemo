@@ -1,6 +1,3 @@
-// Created by Christian.
-// Copyright © 2018 TwoBulls. All rights reserved.
-
 #pragma once
 
 #include <vector>
