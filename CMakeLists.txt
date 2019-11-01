@@ -1,0 +1,30 @@
+cmake_minimum_required(VERSION 3.7)
+
+project(vtb)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+if(WIN32)
+	find_package(Vulkan REQUIRED)
+else()
+	include_directories("/Users/christian/work/MoltenVK/Package/Debug/MoltenVK/include")
+	add_definitions(-DAPPLE)
+	add_definitions(-DMACOS)
+endif()
+
+set(Root ${CMAKE_SOURCE_DIR})
+set(External ${Root}/External)
+
+include_directories(${Root}/Include)
+include_directories(${External}/glm)
+include_directories(${Vulkan_INCLUDE_DIRS})
+
+if(WIN32)
+	add_subdirectory(${External}/glfw)
+endif()
+
+add_subdirectory(Source)
+add_subdirectory(Test)
+add_subdirectory(Example)
+

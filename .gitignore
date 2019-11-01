@@ -1,0 +1,15 @@
+build/
+/External-Local/
+
+.DS_Store
+
+# Xcode artefacts
+xcuserdata/
+
+# Visual Studio artefacts
+Debug/
+Release/
+*.user
+*.filters
+.vs/
+
