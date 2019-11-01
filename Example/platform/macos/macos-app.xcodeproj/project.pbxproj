@@ -311,7 +311,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = com.twobulls;
+				ORGANIZATIONNAME = com.schladetsch;
 				TargetAttributes = {
 					AA05303C205785F8009C89C1 = {
 						CreatedOnToolsVersion = 9.2;
@@ -531,7 +531,7 @@
 				);
 				INFOPLIST_FILE = "macos-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.twobulls.macos-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.schladetsch.macos-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -553,7 +553,7 @@
 				);
 				INFOPLIST_FILE = "macos-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.twobulls.macos-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.schladetsch.macos-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

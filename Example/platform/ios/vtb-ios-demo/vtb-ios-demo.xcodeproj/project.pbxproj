@@ -298,7 +298,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.twobulls.vtb-ios-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.schladetsch.vtb-ios-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "vtb-ios-demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -320,7 +320,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.twobulls.vtb-ios-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.schladetsch.vtb-ios-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "vtb-ios-demo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
