@@ -16,11 +16,11 @@ First, install VulkanSDK for your platform.
 
 Then:
 
-`
-$ git clone --recursive TODO
+```bash
+$ git clone --recursive --submodules VulkanSpike
 $ cd VulkanSpike
 $ mkdir build && cmake .. && make
-`
+```
 
 This should work for many systems, except...
 
