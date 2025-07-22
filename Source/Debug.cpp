@@ -2,6 +2,7 @@
 #include <string>
 #include <stdexcept>
 #include <assert.h>
+#include <cstring>
 
 #include "vtb/Debug.hpp"
 #include "vtb/GetVector.hpp"

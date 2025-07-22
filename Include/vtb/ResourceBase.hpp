@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ResourceCommon.hpp"
+#include <stdexcept>
 
 VTB_BEGIN
 
@@ -15,7 +16,7 @@ struct ResourceBase : ResourceCommon
         resource_ = resource;
     }
 
-    void Recreate() override { throw new std::runtime_error("Cannot recreate resource"); }
+    void Recreate() override { throw std::runtime_error("Cannot recreate resource"); }
     Resource Get() const { return resource_; }
 
     operator Resource() const { return resource_; }

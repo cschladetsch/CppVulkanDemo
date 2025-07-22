@@ -1,4 +1,5 @@
 #include <set>
+#include <stdexcept>
 
 #include "vtb/Device.hpp"
 #include "vtb/QueueFamily.hpp"

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <assert.h>
+#include <cstring>
 
 #include "vtb/Util.hpp"
 

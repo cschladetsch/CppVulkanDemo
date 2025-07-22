@@ -1,4 +1,5 @@
 #include <array>
+#include <limits>
 
 #include "vtb/SwapChain.hpp"
 #include "vtb/QueueFamily.hpp"

@@ -2,6 +2,12 @@
 #include "vtb/Debug.hpp"
 #include "vtb/Glfw.hpp"
 
+#ifndef WIN32
+#ifndef __APPLE__
+#include <GLFW/glfw3.h>
+#endif
+#endif
+
 VTB_BEGIN
 
 void Instance::Create(bool enableValidationLayers)
@@ -31,6 +37,13 @@ void Instance::Create(bool enableValidationLayers)
     extensions.push_back(VK_MVK_IOS_SURFACE_EXTENSION_NAME);
 #elif defined(VK_USE_PLATFORM_MACOS_MVK)
     extensions.push_back(VK_MVK_MACOS_SURFACE_EXTENSION_NAME);
+#else
+    // For Linux/Unix, use GLFW to get required extensions
+    uint32_t count = 0;
+    const char **glfwExtensions;
+    glfwExtensions = glfwGetRequiredInstanceExtensions(&count);
+    for (uint32_t n = 0; n < count; ++n)
+        extensions.push_back(glfwExtensions[n]);
 #endif
     VkApplicationInfo appInfo = {};
     appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;

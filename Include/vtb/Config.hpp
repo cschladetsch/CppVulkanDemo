@@ -6,7 +6,7 @@
 #   define VK_USE_PLATFORM_WIN32_KHR
 #endif
 
-#if APPLE
+#ifdef __APPLE__
 #   include "MoltenVK/mvk_vulkan.h"
 #else
 #   include <vulkan/vulkan.h>

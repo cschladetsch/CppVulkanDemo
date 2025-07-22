@@ -25,6 +25,9 @@ if(WIN32)
 endif()
 
 add_subdirectory(Source)
-add_subdirectory(Test)
 add_subdirectory(Example)
+
+# Enable testing
+enable_testing()
+add_subdirectory(Test)
 

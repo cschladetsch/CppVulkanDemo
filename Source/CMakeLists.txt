@@ -2,5 +2,9 @@ file(GLOB Sources *.cpp)
 
 add_library(vtb ${Sources})
 
-target_link_libraries(vtb glfw glm ${Vulkan_Libraries})
+if(WIN32)
+    target_link_libraries(vtb glfw ${Vulkan_LIBRARIES})
+else()
+    target_link_libraries(vtb ${Vulkan_LIBRARIES})
+endif()
 

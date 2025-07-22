@@ -2,6 +2,12 @@
 
 #include "vtb/Surface.hpp"
 
+#ifndef WIN32
+#ifndef __APPLE__
+#include <GLFW/glfw3.h>
+#endif
+#endif
+
 VTB_BEGIN
 
 void Surface::Create(VkInstance instance, void *window)
@@ -13,7 +19,7 @@ void Surface::Create(VkInstance instance, void *window)
     ci.sType = VK_STRUCTURE_TYPE_WIN32_SURFACE_CREATE_INFO_KHR;
     ci.hwnd = (HWND)window;
     VTB_CALL(vkCreateWin32SurfaceKHR(instance_, &ci, 0, &surface_));
-#elif defined(APPLE)
+#elif defined(__APPLE__)
 #   ifdef IOS
 #       define CREATE_INFO VkIOSSurfaceCreateInfoMVK
 #       define CREATE_SURFACE vkCreateIOSSurfaceMVK
@@ -30,9 +36,11 @@ void Surface::Create(VkInstance instance, void *window)
     ci.pView = window;
 
     if (CREATE_SURFACE(instance_, &ci, NULL, &surface_) != VK_SUCCESS)
-        throw new std::runtime_error("Failed to make surface");
+        throw std::runtime_error("Failed to make surface");
 #else
-#   error("Unsupported platform")
+    // For Linux, use GLFW to create the surface
+    if (glfwCreateWindowSurface(instance_, (GLFWwindow*)window, nullptr, &surface_) != VK_SUCCESS)
+        throw std::runtime_error("Failed to create window surface");
 #endif
 }
 

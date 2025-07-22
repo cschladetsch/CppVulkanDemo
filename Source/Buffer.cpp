@@ -1,5 +1,6 @@
 #include "vtb/Buffer.hpp"
 #include "vtb/Commands.hpp"
+#include <stdexcept>
 
 VTB_BEGIN
 
