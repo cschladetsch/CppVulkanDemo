@@ -13,13 +13,11 @@ if [ $? -ne 0 ]; then
 fi
 
 # Run the executable (without arguments since they were for the build)
-# Assuming the executable is in build directory
-if [ -f "build/CppVulkanDemo" ]; then
-    ./build/CppVulkanDemo
-elif [ -f "build/Example/CppVulkanDemo" ]; then
-    ./build/Example/CppVulkanDemo
+# The executable is in the Bin directory
+if [ -f "Bin/linux_demo" ]; then
+    cd Bin && ./linux_demo
 else
     echo "Error: Could not find executable"
-    echo "Looking for executable in build/ and build/Example/"
+    echo "Looking for executable in Bin/"
     exit 1
 fi
